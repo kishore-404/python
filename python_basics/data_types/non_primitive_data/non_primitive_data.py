@@ -4,11 +4,11 @@
 
 # Key Points:
 # Non-primitive types can store a collection of values.
-# They can be mutable (like list, dict, set) or immutable (like tuple).
+# They can be mutable (list, dict, set) or immutable (tuple).
 # They allow for complex data structures.
 
 # List - ordered, mutable, allows duplicates
-fruits = ["apple", "banana", "cherry"]
+fruits = ["apple", "banana", "cherry",2]
 print("List:", fruits, type(fruits))
 
 # Tuple - ordered, immutable, allows duplicates
