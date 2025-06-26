@@ -1,28 +1,29 @@
-# int
-num = 10
-print("interger",num,type(num))
-# float
-pi=3.14
-print("Float : ",pi,type(pi))
-# string
-name="kishore"
-print("String",name,type(name))
-# Boolean
-s=True
-print("Boolean",s,type(s))
-# list
-li = [1,2,4,5,6,9,8]
-print("List ",li , type(li))
-# tuple 
-tu = (2,34,55,62,"dd",44)
-print("Tuple",tu,type(tu))
-# dict
-dic = {
-    "name":"kishore",
-    "age":20,
-    "job":"developer"
-}
-print("Dist",dic,type(dic))
-# set
-r={23,44,23,44,56,23,2}
-print("Set",r,type(r))
+colors = ["red", "green", "blue", "yellow", "red"]
+print("first element",colors[0])
+print("Last element",colors[-1])
+colors[2]="cyan"
+print("after changed the blue to  cyan ",colors)
+colors.append("orange")
+colors.insert(2,"pink")
+print("appended orange and pink inserted at index 2",colors)
+colors.remove("red")
+last_color = colors.pop()
+del colors[1]
+print("removed color is ",last_color, "deleted 2nd element is ",colors)
+print(len(colors))
+print("green" in colors)
+for i in colors:
+    print(i)
+
+print(colors[1:3])
+colors.sort()
+print(colors)
+colors_sorted = sorted(colors)
+print(colors_sorted)
+colors.reverse()
+print(colors)
+new_var = colors.copy()
+print(new_var)
+print(colors)
+colors.clear()
+print(colors)
