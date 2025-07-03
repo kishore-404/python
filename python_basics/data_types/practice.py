@@ -1,29 +1,40 @@
-colors = ["red", "green", "blue", "yellow", "red"]
-print("first element",colors[0])
-print("Last element",colors[-1])
-colors[2]="cyan"
-print("after changed the blue to  cyan ",colors)
-colors.append("orange")
-colors.insert(2,"pink")
-print("appended orange and pink inserted at index 2",colors)
-colors.remove("red")
-last_color = colors.pop()
-del colors[1]
-print("removed color is ",last_color, "deleted 2nd element is ",colors)
-print(len(colors))
-print("green" in colors)
-for i in colors:
-    print(i)
+movies = ["GOAT","Avengers","Alita Battle Angel","Endgame","kutty"]
+print(movies)
+print("First index : ",movies[0])
+print("Last index : ",movies[(len(movies)-1)])
 
-print(colors[1:3])
-colors.sort()
-print(colors)
-colors_sorted = sorted(colors)
-print(colors_sorted)
-colors.reverse()
-print(colors)
-new_var = colors.copy()
-print(new_var)
-print(colors)
-colors.clear()
-print(colors)
+movies[1]="Tourist Family"
+print("Updated the second movie : ",movies)
+
+removed_movie_1 = movies.pop()
+print(movies)
+movies.remove("Endgame")
+print(movies)
+print("Length of the movies :  ",len(movies) )
+print("GOAT" in movies)
+
+for movie in movies : {
+    print(movie)
+}
+movies.sort()
+print(movies)
+movies.reverse()
+print(movies)
+
+squares = [x**2 for x in range(10)]
+print(squares)
+even = [x for x in squares if x %2==0]
+print(even)
+
+matrix = [
+    [1, 2, 3],
+    [4, 5, 6],
+    [7, 8, 9]
+]
+print(matrix[1][2])
+movies.extend(["Ghili","Asuran","GOAT"])
+print(movies)
+no = movies.count("GOAT")
+print(no)
+second = movies.index("Ghili")
+print(second)
