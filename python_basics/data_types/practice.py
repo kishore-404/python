@@ -1,40 +1,14 @@
-movies = ["GOAT","Avengers","Alita Battle Angel","Endgame","kutty"]
-print(movies)
-print("First index : ",movies[0])
-print("Last index : ",movies[(len(movies)-1)])
+students = ["Faustina","safrina","sai","kim","roze"]
+print(students[0])
+print(students[(len(students)-1)])
+print("Length of the tuple : ",len(students))
 
-movies[1]="Tourist Family"
-print("Updated the second movie : ",movies)
-
-removed_movie_1 = movies.pop()
-print(movies)
-movies.remove("Endgame")
-print(movies)
-print("Length of the movies :  ",len(movies) )
-print("GOAT" in movies)
-
-for movie in movies : {
-    print(movie)
-}
-movies.sort()
-print(movies)
-movies.reverse()
-print(movies)
-
-squares = [x**2 for x in range(10)]
-print(squares)
-even = [x for x in squares if x %2==0]
-print(even)
-
-matrix = [
-    [1, 2, 3],
-    [4, 5, 6],
-    [7, 8, 9]
-]
-print(matrix[1][2])
-movies.extend(["Ghili","Asuran","GOAT"])
-print(movies)
-no = movies.count("GOAT")
-print(no)
-second = movies.index("Ghili")
-print(second)
+student = list(students)
+student.append("kishore")
+students = tuple(student)
+print(students)
+print("Ram" in students)
+s1,s2,*others = students
+student_scores = (("Kishore", 92), ("Ram", 85), ("Priya", 78))
+for name , score in student_scores : 
+    print(f"{name} scored {score}")

@@ -15,7 +15,7 @@ person = {
 }
 print("Initial Dictionary:", person, type(person))
 
-# Accessing values by key
+# Accessing values by key - get()
 print("Name:", person["name"])
 print("Age:", person.get("age"))  # Safer way to access (returns None if key doesn't exist)
 

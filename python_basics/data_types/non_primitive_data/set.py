@@ -11,16 +11,16 @@
 fruits = {"apple", "banana", "cherry"}
 print("Initial Set:", fruits, type(fruits))
 
-# Adding items
+# Adding items - add()
 fruits.add("orange")           # Adds a new item
 fruits.add("apple")            # Duplicate item (will be ignored)
 print("After add:", fruits)
 
-# Adding multiple items
+# Adding multiple items - update()
 fruits.update(["kiwi", "grape"])
 print("After update:", fruits)
 
-# Removing items
+# Removing items - remove() , discard()
 fruits.remove("banana")        # Removes item (raises error if not found)
 print("After remove:", fruits)
 

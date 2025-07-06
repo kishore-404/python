@@ -64,7 +64,7 @@ fruits_list = list(fruits)      # Convert to list to modify
 fruits_list.append("orange")    
 fruits = tuple(fruits_list)     # Convert back to tuple
 print("Modified tuple (via list):", fruits)
-
+    
 # Count and index
 print("Count of 'apple':", fruits.count("apple"))
 print("Index of 'cherry':", fruits.index("cherry"))
