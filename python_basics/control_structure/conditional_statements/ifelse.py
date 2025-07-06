@@ -4,16 +4,19 @@
 # 1. Simple if statement
 # Executes the block only if the condition is True
 x = 10
-if (x > 0):
-    print("x is positive")
+if (x > 0): {
+      print("x is positive")
+      }
 
 # 2. if-else statement
 # Chooses between two blocks of code
 x = -5
-if (x >= 0):
+if (x >= 0): {
     print("x is non-negative")
-else:
+    }
+else:{
     print("x is negative")
+    }
 
 # 3. if-elif-else ladder
 # Useful when checking multiple exclusive conditions
