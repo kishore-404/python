@@ -16,7 +16,7 @@ def convert_input(value):
         print(f"Hexadecimal: {hex(ord(value))[2:].upper()}")  # hex() to hex
         return
 
-    # If the input is a binary number (contains only 0s and 1s)
+    # If the input is a binary number (contains only 0s and 1s)z
     if value.isdigit() and set(value).issubset({'0', '1'}):
         decimal = int(value, 2)  # Interpret value as base-2
         print(f"Binary input: {value}")
