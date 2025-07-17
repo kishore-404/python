@@ -19,6 +19,8 @@
 # ✅ Defining a Class
 class Person:
     # 🔸 Constructor: __init__() is automatically called when object is created.
+    # self - eference to the current instance of the class.
+    # __init__	Constructor for initializing objects
     def __init__(self, name, age):
         self.name = name    # instance variable
         self.age = age      # instance variable
