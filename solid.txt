@@ -1,0 +1,12 @@
+🧠 BONUS: SOLID Principles (Good to know for interviews)
+These are design principles for writing clean, scalable OOP code:
+
+S – Single Responsibility Principle
+
+O – Open/Closed Principle
+
+L – Liskov Substitution Principle
+
+I – Interface Segregation Principle
+
+D – Dependency Inversion Principle
