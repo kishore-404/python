@@ -1,0 +1,88 @@
+# ✅ Definition:
+# Space Complexity refers to the **total memory** (RAM) used by an algorithm or program
+# in terms of the size of the input (n). It includes:
+# 🔹 Memory used by variables, data structures, function calls, and recursion stacks.
+
+# ✅ Why we need Space Complexity:
+# 🔹 To write **memory-efficient code**
+# 🔹 To avoid **Memory Errors / Crashes**
+# 🔹 To understand trade-offs between **speed and space**
+# 🔹 Critical for coding interviews and large-scale applications
+
+# -------------------------------------------------------
+
+# ✅ How to measure Space Complexity:
+# Total space = **input space + auxiliary space**
+# 🔹 Input space = size of input (usually given)
+# 🔹 Auxiliary space = extra space used by the algorithm (variables, arrays, recursion)
+
+# -------------------------------------------------------
+
+# ✅ Common Space Complexities:
+
+# 🔸 O(1) — Constant space
+#     Uses same amount of memory regardless of input size
+# 🔸 O(n) — Linear space
+#     Memory grows linearly with input size (like creating a copy of the list)
+# 🔸 O(n²) — Quadratic space
+#     Used in matrix or 2D table storage
+# 🔸 O(log n) — Logarithmic space
+#     Seen in recursive algorithms like binary search (log n call stack)
+
+# -------------------------------------------------------
+
+# ✅ Example 1: O(1) Space
+
+def print_sum(arr):
+    total = 0      # 1 variable
+    for i in arr:
+        total += i
+    print(total)
+
+# No matter the size of arr, memory for 'total' remains constant
+
+# -------------------------------------------------------
+
+# ✅ Example 2: O(n) Space
+
+def double_elements(arr):
+    result = []
+    for x in arr:
+        result.append(x * 2)
+    return result
+
+# Output list 'result' grows with input size
+
+# -------------------------------------------------------
+
+# ✅ Example 3: O(n) Recursive Space (Call Stack)
+
+def factorial(n):
+    if n == 0:
+        return 1
+    return n * factorial(n - 1)
+
+# Each recursive call takes space → n calls = O(n) space
+
+# -------------------------------------------------------
+
+# ✅ Comparison: Time vs Space
+
+# Some algorithms use more space to gain speed (Dynamic Programming with memoization)
+# Some use less space but take more time (Recursion without memoization)
+
+# -------------------------------------------------------
+
+# ✅ Tips to reduce space complexity:
+
+# 🔹 Reuse variables
+# 🔹 Modify input in-place (if allowed)
+# 🔹 Use generators instead of lists for iteration
+# 🔹 Avoid unnecessary copies of data
+
+# -------------------------------------------------------
+
+# ✅ Limitations:
+# ❌ Space Complexity doesn’t account for actual memory size (just relative growth)
+# ❌ Real memory usage may be affected by interpreter, caching, OS, etc.
+
